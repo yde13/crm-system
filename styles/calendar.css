@@ -1,0 +1,157 @@
+/*
+* === MAIN CONTAINER ===
+*/
+
+#main-container {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   margin-top: 50px;
+   flex-wrap: wrap;
+}
+
+
+
+
+/*
+* === CALENDAR ===
+*/
+
+#calendar-container {
+   font-family: "Zilla Slab", serif;
+   width: 490px;
+   padding: 8px;
+   margin: 5px 10px 0px 10px;
+   border-radius: 10px;
+   box-shadow: 0 15px 25px #03030380;
+}
+
+#event-container {
+   width: 300px;
+   height: 472px;
+   padding: 8px;
+   margin: 5px 10px 0px 10px;
+   border-radius: 10px;
+   box-shadow: 0 15px 25px #03030380;
+   background-color: #3f5fa5;
+}
+
+.title-light {
+   background-color: #3f5fa5;
+   font-weight: bold;
+   font-size: 26px;
+   text-align: center;
+   padding: 15px;   
+}
+
+.title-dark {
+   background-color: #061539;
+   color: azure;
+   font-weight: bold;
+   font-size: 26px;
+   text-align: center;
+   padding: 15px;   
+}
+
+.subtitle {
+   font-size: 20px;
+   padding: 10px;
+}
+
+.week-item {
+   display: flex;
+}
+
+.header-item {
+   display: flex;
+   height: 50px;
+   width: 70px;
+   justify-content: center;
+   align-items: center;
+   font-weight: bold;
+   background-color: #061539;
+   color: azure;
+   border: 1px solid #061539;
+   margin-bottom: 1px;
+}
+
+.day-item {
+   display: flex;
+   height: 70px;
+   width: 70px;
+   justify-content: center;
+   align-items: center;
+   background-color: #3f5fa5;
+   border: 1px solid #2E4372;
+}
+
+.day-item:hover {
+   border: 1px solid #7887AB;
+}
+
+.event-day {
+   background-color: #162956;
+   color: azure;
+}
+
+.event {
+   background-color: azure;
+   border-radius: 2px;
+   padding: 5px 10px;
+   margin: 5px 0px;
+   color: #162956;
+}
+
+
+
+
+/*
+* === RESPONSIVE FOR LAPTOP / TABLET ===
+*/
+
+@media screen and (max-width: 900px) {
+
+   #main-container {
+      margin-top: 30px;
+   }
+
+   #event-container {
+      width: 490px;
+      height: 300px;
+   }
+}
+
+
+
+/*
+* === RESPONSIVE FOR TABLET / MOBILE DEVICE ===
+*/
+
+@media screen and (max-width: 560px) {
+
+   #main-container {
+      margin-top: 20px;
+   }
+
+   #event-container {
+      width: 320px;
+      height: 300px;
+   }
+
+   #calendar-container {
+      width: 320px;
+   }
+
+   .header-item {
+      height: 43px;
+      width: 43px;
+      font-size: 18px;
+   }
+   
+   .day-item {
+      height: 43px;
+      width: 43px;
+      font-size: 18px;
+   }
+}
+

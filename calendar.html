@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/calendar.css">
+  <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Calendar</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a href="customers.html" class="nav-item">
+      <img class="logo" src="images/logo.png">
+      <span>Home</span>
+    </a>
+    <a href="calendar.html" class="nav-item">
+      <img class="icon" src="https://img.icons8.com/nolan/64/000000/planner.png">
+      <span>Calendar</span>
+    </a>
+    <a href="deadline.html" class="nav-item">
+      <img class="icon" src="https://img.icons8.com/nolan/64/000000/appointment-reminders.png">
+      <span>Reminders</span>
+    </a>
+    <a href="logIn.html" class="nav-item push-right">
+      <img class="icon" src="https://img.icons8.com/nolan/64/000000/exit.png">
+      <span>Log out</span>
+    </a>
+  </div>
+
+  <!-- CALENDAR -->
+  <div id="main-container">
+
+    <div id="calendar-container">
+      <!--Container-->
+      <div class="title-light" id="calendar-title">November 2019</div>
+      <div class="week-item">
+        <!--Calendar header-->
+        <div class="header-item">Sun</div>
+        <div class="header-item">Mon</div>
+        <div class="header-item">Tue</div>
+        <div class="header-item">Wed</div>
+        <div class="header-item">Thu</div>
+        <div class="header-item">Fri</div>
+        <div class="header-item">Sat</div>
+      </div>
+      <div class="week-item">
+        <!--Week 1-->
+        <div class="day-item"></div>
+        <div class="day-item"></div>
+        <div class="day-item"></div>
+        <div class="day-item"></div>
+        <div class="day-item"></div>
+        <div class="day-item" id="day1">1</div>
+        <div class="day-item" id="day2">2</div>
+      </div>
+      <div class="week-item">
+        <!--Week 2-->
+        <div class="day-item" id="day3">3</div>
+        <div class="day-item" id="day4">4</div>
+        <div class="day-item" id="day5">5</div>
+        <div class="day-item" id="day6">6</div>
+        <div class="day-item" id="day7">7</div>
+        <div class="day-item" id="day8">8</div>
+        <div class="day-item" id="day9">9</div>
+      </div>
+      <div class="week-item">
+        <!--Week 3-->
+        <div class="day-item" id="day10">10</div>
+        <div class="day-item" id="day11">11</div>
+        <div class="day-item" id="day12">12</div>
+        <div class="day-item" id="day13">13</div>
+        <div class="day-item" id="day14">14</div>
+        <div class="day-item" id="day15">15</div>
+        <div class="day-item" id="day16">16</div>
+      </div>
+      <div class="week-item">
+        <!--Week4-->
+        <div class="day-item" id="day17">17</div>
+        <div class="day-item" id="day18">18</div>
+        <div class="day-item" id="day19">19</div>
+        <div class="day-item" id="day20">20</div>
+        <div class="day-item" id="day21">21</div>
+        <div class="day-item" id="day22">22</div>
+        <div class="day-item" id="day23">23</div>
+      </div>
+      <div class="week-item">
+        <!--Week5-->
+        <div class="day-item" id="day24">24</div>
+        <div class="day-item" id="day25">25</div>
+        <div class="day-item" id="day26">26</div>
+        <div class="day-item" id="day27">27</div>
+        <div class="day-item" id="day28">28</div>
+        <div class="day-item" id="day29">29</div>
+        <div class="day-item" id="day30">30</div>
+      </div>
+    </div>
+    <div id="event-container">
+      <div class="title-dark">Events</div>
+      <div class="title-light subtitle" id="day-month"></div>
+      <div id="event-here"></div>
+    </div>
+  </div>
+  <!--script src="EventClass.js"></script-->
+  <script src="scripts/calendar.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Deadlines</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/deadline.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <script>
+    $(document).ready(function() {
+      $('#myModal').modal('show');
+    });
+  </script>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="customers.html" class="nav-item">
+      <img class="logo" src="images/logo.png">
+      <span>Home</span>
+    </a>
+    <a href="calendar.html" class="nav-item">
+      <img class="icon" src="https://img.icons8.com/nolan/64/000000/planner.png">
+      <span>Calendar</span>
+    </a>
+    <a href="deadline.html" class="nav-item">
+      <img class="icon" src="https://img.icons8.com/nolan/64/000000/appointment-reminders.png">
+      <span>Deadlines</span>
+    </a>
+    <a href="logIn.html" class="nav-item push-right">
+      <img class="icon" src="https://img.icons8.com/nolan/64/000000/exit.png">
+      <span>Log out</span>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="modal fade" id="myModal" role="dialog" data-toggle="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Upcoming Events</h3>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button id="close" type="button" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <table class="table table-hover table-striped">
+    <thead>
+      <tr class="bg-primary">
+        <th scope="col">Date</th>
+        <th scope="col">Time</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">ID</th>
+      </tr>
+    </thead>
+    <tbody class="events">
+    </tbody>
+  </table>
+  <script src="scripts/deadline.js"></script>
+</body>
+
+</html>

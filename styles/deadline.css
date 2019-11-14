@@ -1,0 +1,78 @@
+.modal-body{
+    text-align: center;
+}
+.modal-title{
+    text-align: center;
+}
+.modal-header {
+    background-color: #3f5fa5;
+    color: azure;
+    border-radius: 5px !important;
+  }
+  .modal-body {
+    background-color: #3f5fa5;
+    color: azure;
+    border-radius: 5px !important;
+  }
+  .modal-footer {
+    background-color: #3f5fa5;
+    color: azure;
+    border-radius: 5px !important;
+  }
+  .events{
+    color: azure;
+  }
+  body {
+    background-color: #3f5fa5;
+    font-family: 'Zilla Slab';
+    margin: 8px;
+  }
+  .bg-primary{
+    background-color:  #061539;
+  }
+  .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #35518d;
+ }
+  .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #192746;
+  }
+
+.text{
+  font-size: 16px;
+}
+
+ .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 100px;
+    flex-wrap: wrap;
+ }
+
+ button:hover {
+   cursor: pointer;
+   background: #233458;
+ }
+
+ button {
+   border-radius: 10px;
+   border: 2px solid #0044cc;
+   background-color: #0044cc;
+   font-size: 15px;
+   color: azure;
+   height: 30px;
+ }
+
+ #close {
+   background-color: #ff1a1a;
+   border: 2px solid #ff1a1a;
+ }
+span{
+  font-size: 16px;
+}
+ @media screen and (max-width: 960px) {
+
+ .container {
+     margin-top: 80px;
+  }
+}
